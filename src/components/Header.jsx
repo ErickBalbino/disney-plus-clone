@@ -8,32 +8,32 @@ export default function Header() {
         <Logo src="/images/logo.svg" alt="logo disney" />
 
         <NavMenu>
-            <Link to="#">
+            <Link to="/">
                 <img src="/images/home-icon.svg" alt="icone home" />
                 <span>HOME</span>
             </Link>
 
-            <Link to="#">
+            <Link to="/search">
                 <img src="/images/search-icon.svg" alt="icone home" />
                 <span>SEARCH</span>
             </Link>
 
-            <Link to="#">
+            <Link to="/watchlist">
                 <img src="/images/watchlist-icon.svg" alt="icone home" />
                 <span>WATCHLIST</span>
             </Link>
 
-            <Link to="#">
+            <Link to="/originals">
                 <img src="/images/original-icon.svg" alt="icone home" />
                 <span>ORIGINALS</span>
             </Link>
 
-            <Link to="#">
+            <Link to="/movies">
                 <img src="/images/movie-icon.svg" alt="icone home" />
                 <span>MOVIES</span>
             </Link>
 
-            <Link to="#">
+            <Link to="/series">
                 <img src="/images/series-icon.svg" alt="icone home" />
                 <span>SERIES</span>
             </Link>
