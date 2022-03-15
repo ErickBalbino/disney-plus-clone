@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 export default function Header() {
   return (
@@ -7,40 +8,35 @@ export default function Header() {
         <Logo src="/images/logo.svg" alt="logo disney" />
 
         <NavMenu>
-            <a href="#">
+            <Link to="#">
                 <img src="/images/home-icon.svg" alt="icone home" />
                 <span>HOME</span>
-            </a>
+            </Link>
 
-            <a href="#">
+            <Link to="#">
                 <img src="/images/search-icon.svg" alt="icone home" />
                 <span>SEARCH</span>
-            </a>
+            </Link>
 
-            <a href="#">
+            <Link to="#">
                 <img src="/images/watchlist-icon.svg" alt="icone home" />
                 <span>WATCHLIST</span>
-            </a>
+            </Link>
 
-            <a href="#">
-                <img src="/images/home-icon.svg" alt="icone home" />
-                <span>HOME</span>
-            </a>
-
-            <a href="#">
+            <Link to="#">
                 <img src="/images/original-icon.svg" alt="icone home" />
                 <span>ORIGINALS</span>
-            </a>
+            </Link>
 
-            <a href="#">
+            <Link to="#">
                 <img src="/images/movie-icon.svg" alt="icone home" />
                 <span>MOVIES</span>
-            </a>
+            </Link>
 
-            <a href="#">
+            <Link to="#">
                 <img src="/images/series-icon.svg" alt="icone home" />
                 <span>SERIES</span>
-            </a>
+            </Link>
         </NavMenu>
         
         <UserImg src="/images/coder.png" />
@@ -82,8 +78,34 @@ const NavMenu = styled.div`
             letter-spacing: 1.02px;
             color: #fff;
             text-transform: uppercase;
-            padding: 0px 5px;
+            margin: 0px 5px;
+            position: relative;
+
+            &::after{
+                content: "";
+                height: 2px;
+                background-color: #fff;
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: -8px;
+                opacity: 0;
+                transform: scaleX(0);
+                transform-origin: left center;
+                transition: 0.4s ease-in-out transform;
+            }
         }
+
+        &:hover{
+            span:after{
+                opacity: 1;
+                transform: scaleX(1);
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        display: none;
     }
 `
 
@@ -95,4 +117,10 @@ const UserImg = styled.img`
     border-radius: 50%;
     object-fit: cover;
     object-position: center;
+    cursor: pointer;
+
+    @media (max-width: 768px) {
+        width: 50px;
+        height: 50px;
+    }
 `
