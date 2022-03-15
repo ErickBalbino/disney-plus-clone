@@ -112,8 +112,8 @@ const NavMenu = styled.div`
 
 
 const UserImg = styled.img`
-    width: 55px;
-    height: 55px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     object-fit: cover;
     object-position: center;

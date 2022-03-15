@@ -6,3 +6,8 @@
   list-style: none;
   color: #fff;
 }
+
+body{
+  background-color: #040714;
+  overflow-x: hidden;
+}
