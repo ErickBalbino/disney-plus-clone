@@ -4,12 +4,12 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css';
 import Header from './components/Header';
 import Home from './components/Home'
-import Search from './components/Search'
-import Watchlist from './components/Watchlist'
-import Originals from './components/Originals'
-import Movies from './components/Movies'
-import Series from './components/Series'
-import NotFound from './components/NotFound';
+import Search from './components/pages/Search'
+import Watchlist from './components/pages/Watchlist'
+import Originals from './components/pages/Originals'
+import Movies from './components/pages/Movies'
+import Series from './components/pages/Series'
+import NotFound from './components/pages/NotFound';
 
 function App() {
   return (

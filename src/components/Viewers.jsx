@@ -29,7 +29,7 @@ export default function Viewers() {
 
 
 const Container = styled.div`
-  padding: 30px 0px;
+  padding: 50px 0px;
   margin-top: 30px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
