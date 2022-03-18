@@ -1,9 +1,10 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
-import './App.css';
-import Header from './components/Header';
+import './App.css'
+import Header from './components/Header'
 import Home from './components/Home'
+import Detail from './components/Detail'
 import Search from './components/pages/Search'
 import Watchlist from './components/pages/Watchlist'
 import Originals from './components/pages/Originals'
@@ -19,8 +20,9 @@ function App() {
 
         <Routes>
           <Route exact path='/' element={<Home />} /> 
+          <Route path='/detail' element={<Detail />} />
           <Route path='/search' element={<Search />} /> 
-          <Route path='/wacthlist' element={<Watchlist />} /> 
+          <Route path='/watchlist' element={<Watchlist />} /> 
           <Route path='/originals' element={<Originals />} /> 
           <Route path='/movies' element={<Movies />} /> 
           <Route path='/series' element={<Series />} />

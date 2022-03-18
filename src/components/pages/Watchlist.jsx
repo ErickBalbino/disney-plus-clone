@@ -1,9 +1,7 @@
 import React from 'react'
 
-function Watchlist() {
+export default function Watchlist() {
   return (
     <div>Watchlist</div>
   )
 }
-
-export default Watchlist

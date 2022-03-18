@@ -5,7 +5,9 @@ import { Link } from 'react-router-dom'
 export default function Header() {
   return (
     <Nav>
-        <Logo src="/images/logo.svg" alt="logo disney" />
+        <Link to="/">
+            <Logo src="/images/logo.svg" alt="logo disney" />
+        </Link>
 
         <NavMenu>
             <Link to="/">
