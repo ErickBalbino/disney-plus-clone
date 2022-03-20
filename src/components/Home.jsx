@@ -6,14 +6,14 @@ import Viewers from './Viewers'
 import Movies from './Movies'
 
 import db from '../firebase'
-import { query, onSnapshot, collection } from "firebase/firestore";
 
 export default function Home() {
 
   useEffect(() => {
-    const q = query(collection(db, "movies"))
-    onSnapshot(q, (snap) => {
-      console.log(snap)
+    db.collection("movies").onSnapshot((snapshot) => {
+     let tempMovies =  snapshot.docs.map((doc) => {
+        return { id: doc.id, ...doc.data()}
+      })
     })
   })
 
