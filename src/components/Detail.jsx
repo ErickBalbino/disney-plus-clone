@@ -51,6 +51,10 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+
+  @media (max-width: 768px) {
+    padding: 10px 5px;
+  }
 `
 
 const Background = styled.div`

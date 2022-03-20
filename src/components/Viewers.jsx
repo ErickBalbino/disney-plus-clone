@@ -36,6 +36,11 @@ const Container = styled.div`
   place-items: center;
   grid-gap: 25px;
   width: 100%;
+
+  @media (max-width: 768px) {
+    grid-gap: 15px;
+    grid-template-columns: repeat(3, 1fr);
+  }
 `
 
 const Wrap = styled.div`

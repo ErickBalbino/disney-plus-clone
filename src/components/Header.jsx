@@ -122,7 +122,7 @@ const UserImg = styled.img`
     cursor: pointer;
 
     @media (max-width: 768px) {
-        width: 50px;
-        height: 50px;
+        width: 42px;
+        height: 42px;
     }
 `

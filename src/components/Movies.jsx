@@ -65,4 +65,8 @@ const Content = styled.div`
             transform: scale(1.05);
         }
     }
+
+    @media (max-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
 `
