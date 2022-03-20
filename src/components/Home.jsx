@@ -1,11 +1,22 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components'
 
 import ImgSlider from './ImgSlider'
 import Viewers from './Viewers'
 import Movies from './Movies'
 
+import db from '../firebase'
+import { query, onSnapshot, collection } from "firebase/firestore";
+
 export default function Home() {
+
+  useEffect(() => {
+    const q = query(collection(db, "movies"))
+    onSnapshot(q, (snap) => {
+      console.log(snap)
+    })
+  })
+
   return (
     <Container>
       <ImgSlider />
