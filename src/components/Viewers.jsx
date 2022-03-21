@@ -38,6 +38,7 @@ const Container = styled.div`
   width: 100%;
 
   @media (max-width: 768px) {
+    display: grid;
     grid-gap: 15px;
     grid-template-columns: repeat(3, 1fr);
   }
