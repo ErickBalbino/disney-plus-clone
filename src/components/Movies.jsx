@@ -43,6 +43,12 @@ const Content = styled.div`
     grid-gap: 25px;
     padding: 20px 0px;
 
+    @media (max-width: 768px){
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        padding: 20px 0px;
+    }
+
     .wrap{
         cursor: pointer;
         border-radius: 10px;
@@ -64,9 +70,5 @@ const Content = styled.div`
             box-shadow: rgb(0 0 0 / 80%) 0px 40px 58px -16px, rgb(0 0 0 / 72%) 0px 30px 22px -10px;
             transform: scale(1.05);
         }
-    }
-
-    @media (max-width: 768px) {
-        grid-template-columns: repeat(2, 1fr);
     }
 `
