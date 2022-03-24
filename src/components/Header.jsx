@@ -41,7 +41,9 @@ export default function Header() {
             </Link>
         </NavMenu>
         
-        <UserImg src="/images/coder.png" />
+        <Link to="/login">
+            <UserImg src="/images/coder.png" />
+        </Link>
     </Nav>
   )
 }

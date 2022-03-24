@@ -50,6 +50,10 @@ const Container = styled.div`
 const CTA = styled.div`
   width: 60vw;
   padding: 80px 40px;
+
+  @media (max-width: 768px) {
+    width: 97vw;
+  }
 `
 
 const CTALogoOne = styled.img`
@@ -92,4 +96,8 @@ const CTALogoTwo = styled.img`
   padding: 20px 0px;
   display: flex;
   margin: 0 auto;
+
+  @media (max-width: 768px) {
+    width: 90%;
+  }
 `
